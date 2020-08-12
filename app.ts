@@ -1,3 +1,20 @@
-function add(n1: number, n2: number) {
-  return n1.toString() + n2.toString();
+let userInput: unknown;
+let x;
+let userName: string;
+
+userInput = 5;
+userInput = "Chris";
+
+if (typeof userInput === "string") {
+  userName = userInput;
 }
+
+function generateError(message: string, code: number): never {
+  throw {
+    message: message,
+    errorCode: code,
+  };
+}
+
+const result = generateError("An error occured!", 500);
+console.log(result);
