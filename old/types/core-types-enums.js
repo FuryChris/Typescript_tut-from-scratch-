@@ -1,3 +1,4 @@
+"use strict";
 // const person: {
 //   name: string;
 //   age: number;
@@ -19,7 +20,7 @@ var person = {
     name: "Chris",
     age: 25,
     hobbies: ["Sports", "Cooking"],
-    role: Role.READ_ONLY
+    role: Role.READ_ONLY,
 };
 console.log(person.name);
 for (var _i = 0, _a = person.hobbies; _i < _a.length; _i++) {
